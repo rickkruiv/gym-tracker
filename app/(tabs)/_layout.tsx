@@ -24,11 +24,21 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
-        name="plans"
+        name="workouts"
         options={{
-          title: 'Plans',
+          title: 'Workouts',
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="document-text" color={color} size={size} />
+            <Ionicons name="barbell" color={color} size={size} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="meals"
+        options={{
+          title: 'Meals',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="restaurant" color={color} size={size} />
           ),
         }}
       />

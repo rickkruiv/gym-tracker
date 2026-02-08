@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { Fire, Star, Barbell, Lightning } from 'phosphor-react-native';
+import { FloatingMenu } from '@/components/ui/floatingMenu'
 
 export default function Home() {
   const week = [
@@ -87,8 +88,27 @@ export default function Home() {
             ))}
           </View>
         </View>
-
       </View>
+
+      <FloatingMenu
+        actions={[
+          {
+            label: "Quick workout",
+            icon: "barbell",
+            onPress: () => { },
+          },
+          {
+            label: "Create routine",
+            icon: "document-text",
+            onPress: () => { },
+          },
+          {
+            label: "Create routine",
+            icon: "restaurant",
+            onPress: () => { },
+          },
+        ]}
+      />
     </View>
   );
 }

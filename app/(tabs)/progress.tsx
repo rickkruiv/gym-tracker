@@ -3,12 +3,26 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function Progress() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Progresso</Text>
+      <Text style={styles.title}>Progress</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#020617', justifyContent: 'center', alignItems: 'center' },
-  text: { color: 'white', fontSize: 22 }
+  container: {
+    flex: 1,
+    backgroundColor: '#020617',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    padding: 24,
+    paddingTop: 64,
+  },
+
+  title: {
+    color: '#ffffff',
+    fontSize: 32,
+    fontWeight: 'bold',
+    marginBottom: 16,
+  },
+
 });
